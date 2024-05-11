@@ -13,7 +13,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="index.jsp">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="cart.jsp">Cart <span class="badge badge-danger">${cart_list.size()}</span> </a></li>
-                <% if (auth != null) { %>
+                <% if (session.getAttribute("auth") != null) { %>
                     <li class="nav-item"><a class="nav-link" href="orders.jsp">Orders</a></li>
                     <nav>
                         <img src="images/1.png" class="user-pic" onclick="toggleMenu()">
